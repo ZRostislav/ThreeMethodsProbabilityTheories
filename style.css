@@ -1,0 +1,104 @@
+body {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 15px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 425px) {
+  /* Added "px" to media query values */
+  .container {
+    max-width: 750px;
+  }
+  .container {
+    max-width: none;
+    font-size: 15px;
+    /* color: rgb(0, 209, 206); */
+  }
+  .container button {
+    margin: 10px;
+  }
+  .container label {
+    font-size: 20px;
+  }
+  .container input {
+    font-size: 15px;
+  }
+  .container p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Added "px" to media query values */
+  .container {
+    max-width: 750px;
+  }
+  .container {
+    max-width: none;
+    font-size: 15px;
+    /* color: red; */
+  }
+  .container button {
+    margin: 10px;
+  }
+  .container label {
+    font-size: 20px;
+  }
+  .container input {
+    font-size: 15px;
+  }
+  .container p {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Added "px" to media query values */
+  .container {
+    max-width: none;
+    font-size: 15px;
+    /* color: blueviolet; */
+  }
+  .container button {
+    margin: 10px;
+  }
+  .container label {
+    font-size: 20px;
+  }
+  .container input {
+    font-size: 15px;
+  }
+  .container p {
+    font-size: 7px;
+  }
+}
+
+#history {
+  margin-top: 20px;
+  text-align: left;
+}
+
+div {
+  padding: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ТриМетодаРешенияТеорийВероятности</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.7.1/math.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="permutation">
+        <h2>Перестановка \(P_n = n!\)</h2>
+        <label for="numberInput">Введите число (n): </label>
+        <input type="number" id="numberInput" min="0" />
+        <button onclick="calculateFactorial()">Вычислить</button>
+        <div id="historyPermutation"></div>
+      </div>
+      <div class="permutations">
+        <h2>Размешения \(A_m^n\)</h2>
+        <label for="mInput">Введите m: </label>
+        <input type="number" id="mInput" min="0" />
+        <label for="nInput">Введите n: </label>
+        <input type="number" id="nInput" min="0" />
+        <button onclick="calculateAmn()">Вычислить</button>
+        <div id="historyPermutations"></div>
+      </div>
+      <div class="combinations">
+        <h2>Сочитания \(C_m^n\)</h2>
+        <label for="mInputC">Введите \(m\): </label>
+        <input type="number" id="mInputC" min="0" />
+        <label for="nInputC">Введите \(n\): </label>
+        <input type="number" id="nInputC" min="0" />
+        <button onclick="calculateCmn()">Вычислить</button>
+        <div id="historyCombinations"></div>
+      </div>
+    </div>
+
+    <script src="permutation.js"></script>
+    <script src="permutations.js"></script>
+    <script src="combinations.js"></script>
+  </body>
+</html>
