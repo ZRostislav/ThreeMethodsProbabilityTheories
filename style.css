@@ -19,21 +19,19 @@ body {
   /* overflow: hidden; */
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .container {
-    /* max-width: 970px; */
+     max-width: 970px; 
   }
 }
 
 @media (max-width: 425px) {
-  /* Added "px" to media query values */
   .container {
     max-width: 750px;
   }
   .container {
     max-width: none;
     font-size: 15px;
-    /* color: rgb(0, 209, 206); */
   }
   .container button {
     margin: 10px;
@@ -50,14 +48,12 @@ body {
 }
 
 @media (max-width: 375px) {
-  /* Added "px" to media query values */
   .container {
     max-width: 750px;
   }
   .container {
     max-width: none;
     font-size: 15px;
-    /* color: red; */
   }
   .container button {
     margin: 10px;
@@ -74,11 +70,9 @@ body {
 }
 
 @media (max-width: 320px) {
-  /* Added "px" to media query values */
   .container {
     max-width: none;
     font-size: 15px;
-    /* color: blueviolet; */
   }
   .container button {
     margin: 10px;
@@ -92,7 +86,7 @@ body {
   .container p {
     font-size: 7px;
   }
-}
+} */
 
 #history {
   margin-top: 20px;
