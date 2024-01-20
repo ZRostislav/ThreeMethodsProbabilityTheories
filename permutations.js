@@ -34,16 +34,16 @@ function calculateAmnFormula(m, n) {
 }
 
 function calculateAmnResult(m, n) {
-  var numerator = factorial(n);
-  var denominator = factorial(n - m);
+  var numerator = factorialPR(n);
+  var denominator = factorialPR(n - m);
   return numerator / denominator;
 }
 
 // Функция факториала (можно использовать ту же функцию, что и на предыдущей странице)
-function factorial(k) {
+function factorialPR(k) {
   if (k === 0 || k === 1) {
     return 1;
   } else {
-    return k * factorial(k - 1);
+    return k * factorialPR(k - 1);
   }
 }
