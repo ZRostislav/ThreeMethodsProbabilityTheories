@@ -1,8 +1,8 @@
-function factorial(n) {
+function factorialPER(n) {
   if (n === 0 || n === 1) {
     return "1";
   } else {
-    return n + " * " + factorial(n - 1);
+    return n + " * " + factorialPER(n - 1);
   }
 }
 
@@ -13,8 +13,8 @@ function calculateFactorial() {
   var n = parseInt(inputElement.value);
 
   if (!isNaN(n) && n >= 0) {
-    var formula = "\\(P" + "_" + n + " = " + factorial(n) + "\\)";
-    var result = "\\(P" + "_" + n + " = " + eval(factorial(n)) + "\\)";
+    var formula = "\\(P" + "_" + n + " = " + factorialPER(n) + "\\)";
+    var result = "\\(P" + "_" + n + " = " + eval(factorialPER(n)) + "\\)";
     var entry = "<p>" + formula + " = " + result + "</p>";
 
     historyElement.innerHTML = entry + historyElement.innerHTML;
